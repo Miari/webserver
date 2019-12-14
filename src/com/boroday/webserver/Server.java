@@ -19,7 +19,7 @@ public class Server {
     }
 
     public void start() throws IOException {
-        if (path==null||port==0){
+        if (path == null || port == 0) {
             throw new IOException("Port or/and path is not defined");
         }
         try (ServerSocket serverSocket = new ServerSocket(port)) {
